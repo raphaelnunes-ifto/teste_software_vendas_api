@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/cliente")
+@RequestMapping("/clientes")
 public class ClienteController extends AbstractController<Cliente, ClienteRepository, ClienteService> {
     public ClienteController(final ClienteService service, final CustomValidator<Cliente> validator) {
         super(service, validator);
